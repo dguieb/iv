@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ivalua App</title>
+
+	<link rel="stylesheet" type="text/css" href="semantic/out/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/header.css">
+	<link rel="stylesheet" type="text/css" href="styles/iv-global.css">
+	<link rel="stylesheet" type="text/css" href="styles/main-styles.css">
+	<link rel="stylesheet" type="text/css" href="styles/static.css">
+	
+	<script
+	  src="https://code.jquery.com/jquery-3.1.1.min.js"
+	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	  crossorigin="anonymous"></script>
+	<script src="semantic/out/semantic.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+	<!-- template scripts -->
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script type="text/javascript" src="js/global.js"></script>
+
+
+</head>
+
+<body class="dark" ng-app="myApp" ng-controller="myCtrl" ng-init="pageTitle='App'">
+
+	<div class="iv-header" ng-include src="'./global/header.html'">        
+		<!-- header template here -->
+    </div>
+
+
+
+	<div class="wrapper">
+		
+		<!-- left navigation -->
+		<div class="left-main column left-nav">
+			<div class="bottom">
+	    		<ul>
+					<li>
+						<a href="#">Manage Users</a>
+						<a href="#" class="collapsed-link"><i class="users icon"></i></a>
+					</li>
+					<li>
+						<a href="#">Configure Profiles</a>
+						<a href="#" class="collapsed-link"><i class="address card icon"></i></a>
+					</li>
+					<li>
+						<a href="#">Browse Data</a>
+						<a href="#" class="collapsed-link"><i class="settings icon"></i></a>
+					</li>
+					<li>
+						<a href="#">Import Data</a>
+						<a href="#" class="collapsed-link"><i class="upload icon"></i></a>
+					</li>
+					<li>
+						<a href="#">Configure Workflows</a>
+						<a href="#" class="collapsed-link"><i class="checkmark box icon"></i></a>
+					</li>
+					<li>
+						<a href="#">Configure Alerts</a>
+						<a href="#" class="collapsed-link"><i class="warning sign icon"></i></a>
+					</li>
+				</ul>	
+			</div>
+		</div>
+
+		<!-- main content view -->
+	    <div class="center-main column" ng-include src="'main.html'">
+	    </div>
+
+	    <!-- right panel -->
+		<div class="component-main column" style="display: none;">
+			<div class="bottom">
+				<div class="component-content">
+					<div class="component-filler-1">
+						content 1
+					</div>
+					<div class="component-filler-2">
+						content 2
+					</div>
+				</div>
+				<div class="fake-rail">
+					<ul>
+						<li class="toggle-right-nav">
+							<!-- <a href="">Top Link</a> -->
+							<i class="area chart icon"></i>
+						</li>
+						<li class="toggle-right-nav">
+							<!-- <a href="">Link</a> -->
+							<i class="bar chart icon"></i>
+						</li>
+						<li class="toggle-right-nav">
+							<!-- <a href="">Link</a> -->
+							<i class="camera retro icon"></i>
+						</li>
+						<li class="toggle-right-nav">
+							<!-- <a href="">Link</a> -->
+							<i class="film icon"></i>
+						</li>
+						<li class="toggle-right-nav">
+							<!-- <a href="">Link</a> -->
+							<i class="line chart icon"></i>
+						</li>
+						<li class="toggle-right-nav">
+							<!-- <a href="">Link</a> -->
+							<i class="newspaper icon"></i>
+						</li>
+						<li class="toggle-right-nav">
+							<!-- <a href="">Link</a> -->
+							<i class="photo icon"></i>
+						</li>
+						<li class="toggle-right-nav">
+							<!-- <a href="">Link</a> -->
+							<i class="pie chart icon"></i>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- end wrapper -->
+	</div>
+
+
+	<div class="footer" ng-include src="'./global/footer.html'">
+		<!-- footer template here -->
+	</div>
+
+	<div class="modals-container" ng-include src="'./global/modals.html'">
+		<!-- all modals here -->
+	</div>
+
+</body>
