@@ -4,23 +4,23 @@
     display: none; 
 }
 body {
-	display: flex;
-	width: 100%;
-	height: 100vh;
-	margin: auto;
-	flex-direction: column;
-	justify-content: space-between;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  flex-direction: column;
+  justify-content: space-between;
   background: white;
 }
 .wrapper {
-	display: flex;
-	-webkit-flex-flow: row wrap;
-	justify-content: flex-start;
-	align-items: stretch;
-	flex-wrap: nowrap;
-	box-sizing: border-box;
-	height: 100%;
-	padding-bottom: 0;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  height: 100%;
+  padding-bottom: 0;
 }
 .column {
     height: 100%;
@@ -41,13 +41,6 @@ body {
   position: relative;
 }
 
-.panel-content {
-  width: 100%;
-  height: 100%;
-  flex-grow: 1;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
 
 /* left and right panel widths */
 .left-panel {
@@ -56,9 +49,24 @@ body {
   transition: all .5s ease;
 }
 .right-panel {
-  background: #999;
-  width: 15em;
+/*   background: #999; */
+  background: #f5f5f5;
+  width: 25em;
   transition: all .5s ease;
+  left:0 !important;
+  padding-bottom: 30px;
+  border-left: 1px solid #aaa;
+}
+
+.right-panel .panel-content {
+  min-width: 350px;
+}
+.panel-content {
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .left-panel.collapse,
@@ -113,6 +121,23 @@ footer {
   font-weight: bold;
 }
 
+
+/* ------------------panel config */
+.secondary {
+  position: relative;
+}
+.panel-actions {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  margin: 0 20px;
+}
+
+.right-panel.closed {
+  width: 0 !important;
+}
+
+
 .action-bar {
   margin: 0;
   padding: 10px 150px;
@@ -134,3 +159,169 @@ footer {
 .main-content .panel-content {
   padding-top: 40px;
 }
+
+/* ------------------blog refactor------------------ */
+ul {
+  margin: 0;
+  padding: 10px 0 0;
+}
+ul li {
+  list-style: none;
+  padding: 0 10px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+
+
+.right-panel .segment {
+  margin: 10px;
+  padding: 0;
+}
+
+.ui.secondary.pointing.menu {
+  background: #f5f5f5;
+/*   border-left: 1px solid #aaa; */
+}
+
+.ui.secondary.pointing.menu .item {
+  width: 50%;
+  display: inline;
+}
+
+.ui.form {
+  padding: 0 10px;
+}
+
+.fields {
+  margin: 0 !important;
+}
+
+.field {
+  padding: 0 !important;
+}
+
+.actions {
+/*   margin-left: 10px; */
+  min-width: 100px;
+  max-width: 100px;
+}
+
+.ui.feed>.event.event {
+  padding: 10px;
+}
+
+.ui.tab {
+  overflow: hidden
+}
+
+.alert-tab .ui.feed {
+  padding: 0 10px;
+}
+
+.alert-tab .ui.feed>.event.event {
+    margin: 10px 0;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  background: white;
+}
+
+.ui.input {
+/*   width: 100%; */
+}
+
+.icon.minus {
+  color: red;
+}
+
+.icon.exclamation {
+  color: #f7b000;
+}
+
+.notifications-tab .ui.feed {
+  padding: 0 10px;
+}
+
+.notifications-tab .ui.feed .event {
+  background: white;
+  border: 1px solid #aaa;
+  border-bottom: none;
+  font-size: 12px;
+}
+
+.notifications-tab .ui.feed .event:first-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;  
+}
+
+.notifications-tab .ui.feed .event:last-child {
+  border-bottom: 1px solid #aaa;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+
+.ui.feed > .event > .content .meta,
+.ui.feed>.event>.content .summary>.date {
+  float: right;
+}
+
+.feed-actions {
+  margin-left: -50px;
+  margin-top: 40px;
+}
+
+.feed-actions .ui.form {
+  padding: 0;
+}
+
+.feed-actions .ui.form .ui.input {
+  width: 100%;
+}
+
+.feed-actions .ui.form .ui.input i {
+  cursor: pointer;
+  pointer-events: all;
+  background: cornflowerblue;
+  color: white; 
+}
+
+.feed-actions .ui.form .ui.input:after,
+.feed-actions .ui.form .ui.input:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 13px 14px;
+    top: -13px;
+    right: 60px;
+}
+
+.feed-actions .ui.form .ui.input:after {
+    border-color: white transparent;  
+}
+.feed-actions .ui.form .ui.input:before {
+    border-color: #7F7F7F transparent;
+}
+
+.feed-actions .ui.form .ui.input:focus:before {
+    border-color: #85b7d9 transparent;
+}
+
+.input {
+  position: relative;
+}
+
+.input .search {
+  position: absolute;
+    right: -340px;
+    opacity: 0;
+    transition: all .5s ease !important;
+    width: 100% !important;
+}
+.input .search.active {
+  right: 0;
+  opacity: 1;
+}
+  

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flex Wrapper</title>
+
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+
+
+<body>
+	<header> 
+    <!-- header goes here --> 
+      <div class="global">Global Navigation</div>
+      <div class="secondary">
+        Title Bar
+        <div class="panel-actions">
+          <a href="#" class="close-panel"> close right panel </a>
+          <a href="#" class="open-panel" style="display: none"> open right panel </a>
+        </div>
+      </div>
+  </header>
+
+	<div class="wrapper">
+		<!-- columns go here -->
+
+		<div class="column left-panel">
+			<div class="panel-content">
+				<!-- left panel -->
+        <h2>Left Panel</h2>
+			</div>
+		</div>
+
+		<div class="main-content">
+      <div class="panel-content">
+        <div class="action-bar">Action Bar (Inside the Wrapper)</div>
+        <h2>Main content</h2>  
+        <div>
+          <a href="#" class="ui primary button collapse-left">toggle left</a>
+<!--           <a href="#" class="ui primary button collapse-right">toggle right</a> -->
+        </div>
+        <div class="spacer"> <div>placeholder content</div> </div>
+        <div class="spacer"> <div>placeholder content</div> </div>
+        <div class="spacer"> <div>placeholder content</div> </div>
+      </div>
+      
+			<!-- a column class is not needed for the main content -->
+			<!-- but it does need a flex-grow: 1 styling -->
+		</div>
+
+		<div class="column right-panel">
+			<div class="panel-content">
+        <!--<h2>(Blog)</h2> -->
+				<!-- right panel -->
+        
+        <div class="ui secondary pointing menu">
+          <a class="item active" data-tab="first">Alert / Messages</a>
+          <a class="item" data-tab="second">Notifications</a>
+        </div>
+        
+        <div class="ui tab alert-tab active" data-tab="first">
+
+          <div class="ui segment">
+          <ul>
+            <li><i class="icon minus circle"></i> plv</li>
+            <li><i class="icon exclamation triangle"></i> DUNS number missing (Tab information)</li>
+            <li><i class="icon exclamation triangle"></i> Change request in progress</li>
+            <li>
+              Documents K-bis manquant <br> 
+              No contract with the role 'Supplier admin'
+            </li>
+          </ul>
+        </div>
+          
+          <div class="ui form add-message-form">
+              
+              <div class="fields">
+                <div class="field fourteen wide">
+                  <div class="ui icon input">
+                    <input class="prompt" type="text" placeholder="Add a Message...">  
+                    <input class="search" type="text" placeholder="Enter your search term...">
+                    <i class="icon paperclip"></i>
+                  </div>
+                </div>
+               
+                
+                <div class="field">
+                  <div class="actions">
+                    <a href="#" class="ui button primary icon send-button"><i class="icon paper plane"></i></a>
+                    <a href="#" class="ui button icon search-button"><i class="icon search"></i></a>
+                  </div>
+                </div>
+              </div>
+             
+            </div>
+          
+          <div class="ui feed">
+              <div class="event">
+                <div class="label">
+                  <img src="https://semantic-ui.com/images/avatar/small/elliot.jpg">
+                </div>
+                <div class="content">
+                  <div class="summary">
+                    <a class="user">
+                      Alexandre Thesin
+                    </a>
+                    <div class="date">
+                      12/21/2017
+                    </div>
+                  </div>
+                <div class="extra text">
+                    
+                  avec PJ
+                </div>
+                  <div class="extra images">
+                    <a><img src="https://semantic-ui.com/images/wireframe/image.png"></a>
+                  </div>
+                  <div class="meta">
+                    <a class="reply">
+                      Reply
+                    </a>
+                    <a class="share">
+                      Share (1)
+                    </a>
+                  </div>
+                  <div class="feed-actions" style="display: none;">
+                    <div class="ui form">
+                      <div class="ui icon input">
+                        <input type="text" name="first-name" placeholder="reply">
+                        <i class="paper plane icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="event">
+                  <div class="label">
+                    <img src="https://semantic-ui.com/images/avatar/small/joe.jpg">
+                  </div>
+                  <div class="content">
+                    <div class="summary">
+                      <a class="user">
+                        Fabrice TRAMEAU
+                      </a>
+                      <div class="date">
+                        12/21/2017
+                      </div>
+                    </div>
+                  <div class="extra text">
+                      test ath avec login ftr
+                  </div>
+                    <div class="meta">
+                      <a class="reply">
+                         Reply
+                      </a>
+                      <a class="share">
+                         Share (1)
+                      </a>
+                    </div>
+                    <div class="feed-actions" style="display: none;">
+                      <div class="ui form">
+                        <div class="ui icon input">
+                          <input type="text" name="first-name" placeholder="reply">
+                          <i class="paper plane icon"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+</div>
+              
+              <div class="event">
+                <div class="label">
+                  <img src="https://semantic-ui.com/images/avatar/small/elliot.jpg">
+                </div>
+                <div class="content">
+                  <div class="summary">
+                    <a class="user">
+                      Alexandre Thesin
+                    </a>
+                    <div class="date">
+                      12/21/2017
+                    </div>
+                  </div>
+                  <div class="extra text">
+                    test ath
+                  </div>
+                  <div class="meta">
+                    <a class="reply">
+                      Reply
+                    </a>
+                    <a class="share">
+                      Share (1)
+                    </a>
+                  </div>
+                  <div class="feed-actions" style="display: none;">
+                    <div class="ui form">
+                      <div class="ui icon input">
+                        <input type="text" name="first-name" placeholder="reply">
+                        <i class="paper plane icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          
+        </div>
+        
+        <div class="ui tab notifications-tab" data-tab="second">
+          <div class="ui feed">
+            <div class="event">
+              <div class="content">
+                <div class="summary">
+                  <a class="user">
+                    <i class="icon flag"></i>
+                    Elliot Fu
+                  </a>
+                  <div class="date">
+                    3 weeks ago
+                  </div>
+                </div>
+                <div class="extra text">
+                  Supplier Activation / Your action is expected for : Due Diligence
+                </div>
+              </div>
+            </div>
+            <div class="event">
+              <div class="content">
+                <div class="summary">
+                  <a class="user">
+                    <i class="icon flag"></i>
+                    Galla Pupel
+                  </a>
+                  <div class="date">
+                    3 weeks ago
+                  </div>
+                </div>
+                <div class="extra text">
+                  Supplier Activation / Your action is expected for : AP Validation
+                </div>
+              </div>
+            </div>
+            <div class="event">
+              <div class="content">
+                <div class="summary">
+                  <a class="user">
+                    <i class="icon flag"></i>
+                    Dave Baker
+                  </a>
+                  <div class="date">
+                    3 weeks ago
+                  </div>
+                </div>
+                <div class="extra text">
+                  Supplier Activation / Your action is expected for : AP Validation
+                </div>
+              </div>
+            </div>
+            <div class="event">
+              <div class="content">
+                <div class="summary">
+                  <a class="user">
+                    <i class="icon flag"></i>
+                    Martin Lacroix
+                  </a>
+                  <div class="date">
+                    3 weeks ago
+                  </div>
+                </div>
+                <div class="extra text">
+                  Activation fournisseur / Action attendue de votre part pour : Validation Comptable
+                </div>
+              </div>
+            </div>
+            <div class="event">
+              <div class="content">
+                <div class="summary">
+                  <a class="user">
+                    <i class="icon flag"></i>
+                    A.K. Kountant
+                  </a>
+                  <div class="date">
+                    3 weeks ago
+                  </div>
+                </div>
+                <div class="extra text">
+                  Supplier Activation / Your action is expected for : AP Validation
+                </div>
+              </div>
+            </div>
+</div>
+        </div>
+        
+
+			</div>
+		</div>
+	</div>
+
+	<footer> 
+    <!-- footer goes here --> 
+    footer
+  </footer>
+</body>
+</html>
