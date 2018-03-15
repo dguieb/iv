@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flex Wrapper</title>
+
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.min.css">
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+	<header> 
+    <!-- header goes here --> 
+      <div class="global">Global Navigation</div>
+      <div class="secondary">Title Bar</div>
+  </header>
+
+	<div class="wrapper">
+		<!-- columns go here -->
+
+		<div class="column left-panel">
+			<div class="panel-content">
+				<!-- left panel -->
+        <h2>Left Panel</h2>
+			</div>
+		</div>
+
+		<div class="main-content">
+      <div class="panel-content">
+        <div class="action-bar">Action Bar (Inside the Wrapper)</div>
+        <h2>Main content</h2>  
+        <div>
+          <a href="#" class="ui primary button collapse-left">toggle left</a>
+          <a href="#" class="ui primary button collapse-right">toggle right</a>
+        </div>
+        <div class="spacer"> <div>placeholder content</div> </div>
+        <div class="spacer"> <div>placeholder content</div> </div>
+        <div class="spacer"> <div>placeholder content</div> </div>
+      </div>
+      
+			<!-- a column class is not needed for the main content -->
+			<!-- but it does need a flex-grow: 1 styling -->
+		</div>
+
+		<div class="column right-panel">
+			<div class="panel-content">
+        <h2>Right Panel</h2>
+				<!-- right panel -->
+			</div>
+		</div>
+	</div>
+
+	<footer> 
+    <!-- footer goes here --> 
+    footer
+  </footer>
+</body>
+</html>
