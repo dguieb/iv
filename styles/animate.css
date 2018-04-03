@@ -1,0 +1,74 @@
+.animate-container {
+	background: white;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.building {
+	padding: 10px 25px;
+	max-height: 1200px;
+	height: 600px;
+	position: relative;
+	transition: all 1s ease;
+}
+
+.building:hover {
+	cursor: pointer;
+	bottom: 0;
+	-webkit-box-shadow: 0 -1px 10px -1px #2669EF;
+	box-shadow: 0 -1px 10px -1px #2669EF;
+	border-top: 2px solid black;
+
+}
+
+.building:nth-child(odd) {
+	background: cornflowerblue;
+}
+
+.building:nth-child(even) {
+	background: darkseagreen;
+}
+
+.building-1 {
+	bottom: -330px;
+}
+
+.building-2 {
+	bottom: -310px;
+}
+
+.building-3 {
+	bottom: -280px;
+}
+
+.building-4 {
+	bottom: -195px;
+}
+
+.building-5 {
+	bottom: -220px;
+}
+
+.building-6 {
+	bottom: -245px;
+}
+
+.building-7 {
+	bottom: -260px;
+}
+
+.building-8 {
+	bottom: -360px;
+}
+
+.building-9 {
+	bottom: -235px;
+}
+
+.building-10 {
+	bottom: -300px;
+}

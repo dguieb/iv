@@ -1,0 +1,149 @@
+/*2 containers */
+#ui-datepicker-div {
+	width: 46em !important;
+}
+
+/*1 container*/
+#ui-datepicker-div {
+	width: 23em;
+}
+
+/*default style*/
+#ui-datepicker-div {
+	box-shadow: 0 2px 4px 1px rgba(0,0,0,.15);
+}
+
+.ui-datepicker .ui-datepicker-header {
+	padding: 8.25px 0px !important;
+}
+
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+	top: 10px;
+}
+
+.ui-datepicker .ui-datepicker-title {
+	border: 1px solid #eee;
+    background: white;
+    margin: 0 3.3em;
+    border-radius: 3px;
+}
+
+.ui-datepicker .ui-datepicker-buttonpane {
+	border-top: 1px dotted #aaa;
+    margin-top: 5px;
+    width: 96%;
+    margin: 5px auto 0;
+}
+
+/*jquery style*/
+.ui-widget-header {
+	border-bottom: none;
+}
+.ui-widget.ui-widget-content {
+	border: 1px dotted #d3d3d3;
+}
+
+.ui-datepicker .ui-datepicker-prev {
+	left: 5px;
+}
+
+.ui-datepicker .ui-datepicker-next {
+	right: 10px;
+}
+
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {
+	border: 2px solid cornflowerblue;
+	border-radius: 10px;
+}
+
+.ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year {
+	border: none;
+	color: #000;
+	text-transform: capitalize;
+}
+
+.ui-datepicker .ui-datepicker-title select {
+	font-size: 14px;
+	margin: 0;
+}
+
+.ui-datepicker-multi .ui-datepicker-group table {
+	width: 95%;
+}
+
+thead:before {
+    content: ' ';
+    background: #f5f5f5;
+    position: absolute;
+    left: 2px;
+    top: 41px;
+    width: 99%;
+    height: 37px;
+    z-index: -1;
+}
+
+.ui-datepicker-group-first thead:after {
+	content: ' ';
+    width: 0;
+    height: 130px;
+    background: #fff;
+    position: absolute;
+    top: 95px;
+    right: 252px;
+    border-right: 1px dotted #aaa;
+}
+
+/*template style*/
+.ui-datepicker .ui-datepicker-header {
+	background: #f5f5f5;
+	color: #000;
+}
+
+.ui-datepicker-calendar th {
+	background-color: #f5f5f5;
+	color: #000;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.ui-datepicker .ui-datepicker-week-end .ui-state-default {
+	background: #fff;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.ui-datepicker .ui-state-default {
+	background: #fff;
+    color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 5px 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.ui-datepicker .ui-datepicker-other-month .ui-state-default {
+	color: #ccc;
+	background: #fff;
+}
+
+.ui-datepicker .ui-datepicker-current-day .ui-state-default,
+.ui-datepicker .ui-state-default.ui-state-hover,
+.ui-datepicker-days-cell-over .ui-state-default, 
+.ui-datepicker .ui-datepicker-days-cell-over.ui-datepicker-today .ui-state-default {
+	background: rgba(33, 133, 208, 0.2);
+	color: rgba(0, 0, 0, 0.7);
+    border-radius: 3px;
+}
+
+.btn_color_darkblue {
+	background: #fff;
+}
+
+.btn_color_darkblue input {
+	color: rgba(33, 133, 208, 0.7);
+}
+
+/*control style*/
+.ui-datepicker .ui-datepicker-buttonpane .btn input {
+	font-weight: bold;
+	font-size: 12px;
+}
