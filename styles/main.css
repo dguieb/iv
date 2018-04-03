@@ -39,6 +39,8 @@ body {
   display: flex;
   flex-grow: 1;
   position: relative;
+  min-width: 0;
+  overflow: hidden;
 }
 
 
@@ -52,7 +54,8 @@ body {
 /*   background: #999; */
   background: #f5f5f5;
   width: 25em;
-  transition: all .5s ease;
+/*  transition: all .5s ease;*/
+  transition: none;
   left:0 !important;
   padding-bottom: 30px;
   border-left: 1px solid #aaa;
@@ -135,10 +138,18 @@ footer {
 
 .right-panel.closed {
   width: 0 !important;
+  transition: width .5s ease;
+}
+
+.right-panel.open {
+  transition: width .5s ease;
 }
 
 
 .action-bar {
+    text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   margin: 0;
   padding: 10px 150px;
 /*   height: auto;  default */ 
@@ -158,6 +169,7 @@ footer {
 /* space for action bar */
 .main-content .panel-content {
   padding-top: 40px;
+  will-change: top;
 }
 
 /* ------------------blog refactor------------------ */
@@ -325,3 +337,17 @@ ul li {
   opacity: 1;
 }
   
+table, td, th {
+    /*table-layout:fixed;*/
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+table {
+  width: 100%;
+}
+
+table tr td {
+  border: 1px solid black;
+}

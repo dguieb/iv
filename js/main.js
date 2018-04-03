@@ -24,10 +24,14 @@ $(function() {
       $('.close-panel').hide();
       $('.open-panel').show();
     
-      $('.open-panel').on('click', function() {
+      $('.open-panel').on('click', function() {      
+          $('.right-panel').addClass('open')
           $('.close-panel').show();
           $('.open-panel').hide();
-          $('.right-panel').removeClass('closed').css('width', panelWidth);     
+          $('.right-panel').removeClass('closed').css('width', panelWidth);
+          setTimeout(function(){
+            $('.right-panel').removeClass('open');
+          }, 500);         
       });
   });
   

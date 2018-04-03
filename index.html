@@ -3,9 +3,9 @@
 <head>
 	<title>Flex Wrapper</title>
 
-	<link rel="stylesheet" type="text/css" href="styles/main.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
 
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.min.js"></script>
@@ -17,7 +17,13 @@
 	<header> 
     <!-- header goes here --> 
       <div class="global">Global Navigation</div>
-      <div class="secondary">Title Bar</div>
+      <div class="secondary">
+    	  Title Bar
+  	    <div class="panel-actions">
+          <a href="#" class="close-panel"> close right panel </a>
+          <a href="#" class="open-panel" style="display: none"> open right panel </a>
+        </div>
+	  </div>
   </header>
 
 	<div class="wrapper">
@@ -38,6 +44,23 @@
           <a href="#" class="ui primary button collapse-left">toggle left</a>
           <a href="#" class="ui primary button collapse-right">toggle right</a>
         </div>
+        <div class="spacer"> 
+        	<div>
+    		<table width="600">
+	          <tbody>
+	            <tr>
+	              <td>
+	              </td>
+	              <td>
+	              </td>
+	              <td>3</td>
+	              <td>4</td>
+	              <td>5</td>
+	            </tr>
+	          </tbody>
+	          </table>
+      		</div>
+      	</div>
         <div class="spacer"> <div>placeholder content</div> </div>
         <div class="spacer"> <div>placeholder content</div> </div>
         <div class="spacer"> <div>placeholder content</div> </div>
